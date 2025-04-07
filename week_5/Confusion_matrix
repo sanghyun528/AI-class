@@ -1,0 +1,30 @@
+혼동행렬은 분류 모델의 성능을 평가하는 데 사용되는 표
+    
+
+혼동 행렬 자체는 4가지 값 (TP, TN, FP, FN)으로 구성
+
+4가지 값을 기반으로 계산되는 주요 성능 지표는 4가지 존재
+
+- 정밀도 (Precision)
+    
+    모델이 Positive라고 예측한 것 중에서 실제로 Positive 인 비율
+    
+    Precision = TP / (TP + FP)
+    
+- 재현율 (Recall)
+    
+    실제 Positive 인 것 중에서 모델이 Positive라고 예측한 비율
+    
+    Recall = TP / (TP + FN)
+    
+- F1 점수 (F1 Score)
+    
+    정밀도와 재현율의 조화 평균
+    
+    F1 score = 2 * (Precision * Recall) / (Precision + Recall)
+    
+- 정확도 (Accuracy)
+    
+    전체 샘플 중에서 정확하게 예측한 비율
+    
+    Accuracy = (TP + TN) / (TP + TN + FP + FN)
